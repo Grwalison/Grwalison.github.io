@@ -1,0 +1,134 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+/*responsive body*/
+    background: url('../img/background-desktop.png')no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+#container {
+    width: 100vw;
+    min-height: 100vh;
+    background: rgba(0,0,0,.3);
+}
+.box {
+    width: 100%;
+    height: 150px;
+    background: rgba(208, 42, 42, 0.8);
+}
+/*styles banners*/
+#container h1 {
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #ff0;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+/*screen banner*/
+.screen-banner {
+    width: 50vw;
+    height: 300px;
+    margin:0 auto;
+    position: relative;
+}
+.btnSlide {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    width: 50vw;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 0px 20px;
+    z-index: 2;
+}
+.btnSlide button {
+    background: none;
+    border: none;
+    outline: 0;
+}
+.btnSlide button img {
+    height: 40px;
+    width: 40px;
+}
+/*----*/
+.date-banner {
+    margin-top: -18px;
+    min-height: 400px;
+    background: rgba(208, 42, 42, 0.8);
+}
+.date-banner h1{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: rgb(60, 0, 0);
+    box-sizing: border-box;
+}
+.options {
+
+}
+.credits {
+    margin-top: 50px;
+    border-top: solid 3px #ff0;
+    text-align: center;
+    height: 100px;
+}
+.credits a {
+    color: #ff0;
+}
+.credits a:hover {
+    text-decoration: underline;
+}
+/*date banner*/
+#btnContain {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.btnOptions {
+    width: 360px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    align-items: center;
+    text-align: justify;
+}
+.btnOptions img{
+    height: 150px;
+    width: 150px;
+}
+.btnOptions p{
+    font-size: 1.2rem;
+}
+
+@media (max-width: 700px) {
+    body {
+        background: url('../img/background-mobile.png')no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .screen-banner {
+        border: none;
+        width: 100%;
+        height: 300px;
+    }
+    #btnContain {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .screen-banner {
+        width: 100vw;
+    }
+    .btnSlide {
+        width: 100vw;
+    }
+}

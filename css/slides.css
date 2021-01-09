@@ -1,0 +1,31 @@
+
+#items {
+    display: flex;
+    overflow-x: auto;
+    overflow: hidden;
+    /*pai == imã*/
+    scroll-snap-type: x mandatory;
+    /*para que funcione em outros dispositivos*/
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+.item {
+    flex: none;
+
+    width: 100%;
+    height: 300px;
+    /*filho == metal*/
+    scroll-snap-align: start;
+    /*desativa os eventos do cursor*/
+    pointer-events: none;
+}
+.item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+@media (max-width: 700px) {
+
+}
